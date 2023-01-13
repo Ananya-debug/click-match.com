@@ -146,8 +146,15 @@ for (let i = 0; i < boxes.length; i++) {
                }
                //calculate and update the moves
                document.getElementById("avail_moves").innerHTML = moves;
+               if((8-moves)<0)
+               {
+                    document.getElementById("used_moves").innerHTML = 0;
+               }
+               else{
+                    document.getElementById("used_moves").innerHTML = (8 - moves);
+               }
                document.getElementById("used_moves").innerHTML = (8 - moves);
-
+     
                if ((counter === 16) && moves != 0) { //Win
                     const disTimeout = setTimeout(game_over, 500);
 
