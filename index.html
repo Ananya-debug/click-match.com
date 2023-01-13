@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Click & Match</title>
+
+     <meta property="og:image" content="https://ananya-debug.github.io/tumpas_bakes.github.io/images2/Logo.png " />
+     <meta property="og:title" content="CLICK & MATCH" />
+     <meta property="og:description" content="Keep Calm, And GAME On !" />
+
+     <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+     <link rel="manifest" href="/site.webmanifest">
+
+     <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+     <div id="computer">
+          <img src="comp.png" alt="" width="120px">
+          <br>
+          <code style="font-size: 20px;">COMPUTER ONLY</code>
+     </div>
+     
+     <div id="main_body">
+
+          <video id="video" autoplay="" muted="">
+               <source src="Click&Match_vid.mp4" type="video/mp4">
+          </video>
+          <br>
+          <a href="play.html">Start</a>
+          
+     </div>
+
+</body>
+
+<script>
+     if (window.matchMedia("(min-width: 1280px)").matches) {
+
+     }
+     else {
+          document.getElementById("main_body").style.display = "none";
+          document.getElementById("computer").style.display = "block";
+          document.body.style.backgroundImage = 'none';
+     }
+</script>
+
+</html>

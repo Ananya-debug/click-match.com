@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Click & Match</title>
+
+     <link rel="stylesheet" href="main.css">
+
+     <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+
+</head>
+
+<body>
+     <div id="win">
+          <img src="happy.gif" alt="" width="400px">
+          <br>
+          <p>WINNER 🚩🚩</p>
+          <a href="#" id="win_play">Play Again</a>
+          <br><br><br>
+     </div>
+
+     <div id="lost">
+          <img src="sad.gif" alt="" width="400px">
+          <br>
+          <p>❌ LOSER ❌</p>
+          <a href="#" id="lost_play">Play Again</a>
+          <br><br><br>
+     </div>
+
+     <div id="rules">
+          <div class="pos">
+               <div></div>
+               <div>RULES</div>
+               <div id="cross">❌</div>
+          </div>
+
+          <hr>
+          ✔ You have to click 2 buttons one by one.
+          <br><br>
+          ✔ There are 8 moves available. (2 clicks = 1 move)
+          <br><br>
+          ✔ If both the first clicked and second clicked button have the same picture, then you will get one move extra.
+          <br><br>
+          ✔ Otherwise you will lose one move.
+          <br><br>
+          ✔ You have to match all the buttons using the available moves to win.
+          <br><br>
+          ✔ If the available moves are 0 and there are buttons left , then you will lose the game.
+          <br><br>
+     </div>
+
+     <div id="main_body">
+
+          <div id="heading">
+               <img src="Click&Match_img.png" alt="">
+          </div>
+          <div class="buttons">
+               <a href="#" id="new_game" style="font-family: 'Ubuntu', sans-serif;margin-right: 10px;">↻</a>
+               <a href="#" id="rules_btn" style="font-family: 'Ubuntu', sans-serif;margin-right: 40px;">Rules</a>
+          </div>
+          <div id="whole_box">
+               <div id="moves_box">
+                    AVAILABLE MOVES
+                    <br><br>
+                    <p id="avail_moves">8</p>
+                    <br><br>
+                    MOVES USED
+                    <br><br>
+                    <p id="used_moves">0</p>
+               </div>
+               <div class="boxes">
+                    <div class="box" id="1"></div>
+                    <div class="box" id="2"></div>
+                    <div class="box" id="3"></div>
+                    <div class="box" id="4"></div>
+                    <div class="box" id="5"></div>
+                    <div class="box" id="6"></div>
+                    <div class="box" id="7"></div>
+                    <div class="box" id="8"></div>
+                    <div class="box" id="9"></div>
+                    <div class="box" id="10"></div>
+                    <div class="box" id="11"></div>
+                    <div class="box" id="12"></div>
+                    <div class="box" id="13"></div>
+                    <div class="box" id="14"></div>
+                    <div class="box" id="15"></div>
+                    <div class="box" id="16"></div>
+
+               </div>
+          </div>
+          <br>
+          <br>
+          <footer>
+               <div>&nbsp;Developed by Ananya Chakraborty</div>
+               <div>© 2023.All Rights
+                    Reserved. &nbsp;</div>
+          </footer>
+     </div>
+</body>
+<script src="main.js"></script>
+
+</html>
